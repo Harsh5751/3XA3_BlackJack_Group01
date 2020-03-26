@@ -195,7 +195,7 @@ img {
 }
 
 .gameTable {
-  background: transparent url('../Images/pontoonTable.png') no-repeat center center;
+  background: transparent url('../Images/pontoonTable.PNG') no-repeat center center;
   background-size: 70vw 81vh;
   border: solid 2px black;
   color: #333;
