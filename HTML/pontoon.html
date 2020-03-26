@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JS bootstrap and JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Compiled and minified CSS Materialize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript Materialize.css -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://kit.fontawesome.com/e30d6dff4d.js" crossorigin="anonymous"></script>
+  <!-- sweetalerts package -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="../CSS/pontoon.css">
+  <title>Pontoon BlackJack</title>
+</head>
+
+<body>
+
+  <!--Navbar section code starts here-->
+  <section id="page-nav">
+    <div class="navbar-fixed">
+      <nav>
+        <!--Triggers nav items to be in hamburger dropdown when page-size becomes smaller-->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons icon-black">menu</i></a>
+        <!--Navbar Brand with App title and logo-->
+        <ul>
+          <li id="logo" class="hide-on-med-and-down"><img class="logoImg" src="../Images/blackjack.png" alt="Travel Tourist Attractions Set Isolated Vector Illustration Icon" /></li>
+          <li id="brand" class="brand-logo">BlackJack</li>
+        </ul>
+        <!--Nav items and links to be placed on far left in the navbar-->
+        <ul class="hide-on-med-and-down">
+          <li id="home"><a class="link" href="index.html">Standard</a></li>
+          <li class="active"><a class="link" href="pontoon.html">Pontoon</a></li>
+          <li><a class="link" href="zappit.html">Zappit</a></li>
+        </ul>
+        <!--Nav items and links to be placed on far right in the navbar-->
+        <ul class="right hide-on-med-and-down">
+          <li><a class="link" href="gameRules.html">Game Rules</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--Sidenav triggered onclick of hamburger icon when page is smaller-->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Standard</a></li>
+      <li class="active"><a href="pontoon.html">Pontoon</a></li>
+      <li><a href="zappit.html">Zappit</a></li>
+      <li><a href="gameRules.html">Game Rules</a></li>
+    </ul>
+  </section>
+  <!--Navbar section code ends here-->
+
+  <!-- Title banner section code starts here -->
+  <section id="title-banner">
+    <div class="container">
+
+      <div id="banner">
+        <h1>Welcome to Pontoon BlackJack!</h1>
+        <p>Get Started playing this alternative version of the BlackJack Game</p>
+        <img class="pontoonImg" src="../Images/pontoon_symb.png" alt="">
+        <br>
+        <button class="waves-effect pulse waves-green btn black start-button btn-large" id="startButton">Play Game</button>
+      </div>
+    </div>
+  </section>
+  <!-- Title banner section code ends here -->
+
+  <!-- Game Environment Section starts here -->
+  <section id="gameEnvironment">
+
+    <!-- Game table -->
+    <div class="gameTable" id="gameTable">
+      <!-- Game area for game details -->
+      <div class="gameArea" id="gameArea">
+        <!-- dealer content -->
+        <div id="dealer">
+          <h3>DEALER</h3>
+        </div>
+        <div id="dealerWins"></div>
+        <div id="dealerHand"></div>
+        <div id="dealerScoreboard"></div>
+
+        <!-- wins and score content -->
+        <div id="winsTitle">
+          <h4>WINS</h4>
+        </div>
+        <div id="scoreTitle">
+          <h4>SCORE</h4>
+        </div>
+
+        <!-- player content -->
+        <div id="playerWins"></div>
+        <div id="playerHand"></div>
+        <div id="playerScoreboard"></div>
+        <div id="player">
+          <h3>PLAYER</h3>
+        </div>
+      </div>
+      <!-- Game Area ends here -->
+    </div>
+    <!-- Game table ends here -->
+
+    <!-- Game Buttons -->
+    <div class="actionButtons">
+      <img src="../Images/10-chip.png" alt="" id="chip10" class="chips-left gameButtons">
+      <img src="../Images/25-chip.png" alt="" id="chip25" class="chips-left gameButtons">
+      <button class="waves-effect waves-green btn red deal-button btn-large gameButtons" id="dealButton">Deal Cards</button>
+      <img src="../Images/50-chip.png" alt="" id="chip50" class="chips-right gameButtons">
+      <img src="../Images/100-chip.png" alt="" id="chip100" class="chips-right gameButtons">
+      <button class="waves-effect waves-green btn red hit-button btn-large gameButtons" id="hitButton">Hit</button>
+      <button class="waves-effect waves-green btn red stay-button btn-large gameButtons" id="stayButton">Stay</button>
+      <button class="waves-effect waves-green btn red double-button btn-large gameButtons" id="doubleButton">Double Down</button>
+      <button class="btn tooltipped waves-effect waves-green btn red yes-button btn-large gameButtons" data-position="top" data-tooltip="Play Again?" id="yesButton">Play Again</button>
+      <button class="btn tooltipped waves-effect waves-green btn red no-button btn-large gameButtons" data-position="top" data-tooltip="Exit" id="noButton">Exit</button>
+      <button class="btn waves-effect waves-yellow btn black currentWage btn-large gameButtons" id="currentWager"></button>
+      <button class="btn waves-effect waves-yellow btn black btn-large gameButtons currentBalance" name="button" id="currentBalance"></button>
+    </div>
+    <!-- Game Buttons end here -->
+  </section>
+  <!-- Game Environment Section ends here -->
+
+  <!-- JavaSscript files for Webpage -->
+  <script src="../JS/cardTypes.js" carset="urf-8"></script>
+  <script src="../JS/deck.js" charset="utf-8"></script>
+  <script src="../JS/player.js" charset="utf-8"></script>
+  <script src="../JS/dealer.js" charset="utf-8"></script>
+  <script src="../JS/GameplayLogicPontoon.js" charset="utf-8"></script>
+  <script src="../JS/mainPontoon.js" charset="utf-8"></script>
+</body>
+
+</html>

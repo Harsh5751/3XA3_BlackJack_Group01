@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JS bootstrap and JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Compiled and minified CSS Materialize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript Materialize.css -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://kit.fontawesome.com/e30d6dff4d.js" crossorigin="anonymous"></script>
+  <!-- sweetalerts package -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="../CSS/gameRules.css">
+  <title>BlackJack Rules</title>
+</head>
+
+<body>
+
+  <!--Navbar section code starts here-->
+  <section id="page-nav">
+    <div class="navbar-fixed">
+      <nav>
+        <!--Triggers nav items to be in hamburger dropdown when page-size becomes smaller-->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons icon-black">menu</i></a>
+        <!--Navbar Brand with App title and logo-->
+        <ul>
+          <li id="logo" class="hide-on-med-and-down"><img class="logoImg" src="../Images/blackjack.png" alt="Travel Tourist Attractions Set Isolated Vector Illustration Icon" /></li>
+          <li id="brand" class="brand-logo">BlackJack</li>
+        </ul>
+        <!--Nav items and links to be placed on far left in the navbar-->
+        <ul class="hide-on-med-and-down">
+          <li id="home"><a class="link" href="index.html">Standard</a></li>
+          <li><a class="link" href="pontoon.html">Pontoon</a></li>
+          <li><a class="link" href="zappit.html">Zappit</a></li>
+        </ul>
+        <!--Nav items and links to be placed on far right in the navbar-->
+        <ul class="right hide-on-med-and-down">
+          <li class="active onPage"><a class="link" href="gameRules.html">Game Rules</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--Sidenav triggered onclick of hamburger icon when page is smaller-->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Standard</a></li>
+      <li><a href="pontoon.html">Pontoon</a></li>
+      <li><a href="zappit.html">Zappit</a></li>
+      <li class="active"><a href="gameRules.html">Game Rules</a></li>
+    </ul>
+  </section>
+  <!--Navbar section code ends here-->
+
+  <!-- rules section -->
+  <section id="rules">
+    <h1>BlackJack Variation Rules</h1>
+    <div class="container">
+
+      <ul class="collapsible">
+        <li class="active">
+          <div class="collapsible-header"><i class="material-icons">casino</i>Standard BlackJack</div>
+          <div class="collapsible-body">
+            <span><b>Objective of the Game</b></span>
+            <p>Each participant attempts to beat the dealer by getting a count as close to 21 as possible, without going over 21.</p>
+            <span><b>Card Values/Scoring</b></span>
+            <p>An ace is worth 1 or 11 depedning on how it benefits the player's score. Face cards are 10 and any other card is its pip value.</p>
+            <span><b>The BlackJack</b></span>
+            <p>"BlackJack" is achieved when the initial 2 cards are equal to 21.</p>
+            <span><b>Betting</b></span>
+            <p>Before the deal begins, each player places a bet, in chips, in front of them in the designated area. Winning will result in returning double the amount wagered, and a starting BlackJack will pay 3 to 2.</p>
+            <span><b>Double Down</b></span>
+            <p>Doubling down in blackjack is a situation where, after you are dealt your two original cards, you decide to double your initial bet in return for a single card – with your option to hit or stay eliminated – in the hope that you will either hit a hand that beats the dealer's or the dealer will bust.</p>
+            <span><b>The Deal</b></span>
+            <p>When all the players have placed their bets, the dealer gives one card face up to each player in rotation clockwise, and then one card face up to themselves. Another round of cards is then dealt face up to each player, but the dealer
+              takes the second card face down. Thus, each player except the dealer receives two cards face up, and the dealer receives one card face up and one card face down.</p>
+            <span><b>The Player's Play</b></span>
+            <p>The player to the left goes first and must decide whether to "stand" (not ask for another card) or "hit" (ask for another card in an attempt to get closer to a count of 21, or even hit 21 exactly). Thus, a player may stand on the two
+              cards originally dealt to them, or they may ask the dealer for additional cards, one at a time, until deciding to stand on the total (if it is 21 or under), or goes "bust" (if it is over 21). In the latter case, the player loses and the
+              dealer collects the bet wagered. The dealer then turns to the next player to their left and serves them in the same manner.
+              The combination of an ace with a card other than a ten-card is known as a "soft hand," because the player can count the ace as a 1 or 11, and either draw cards or not. For example with a "soft 17" (an ace and a 6), the total is 7 or 17.
+              While a count of 17 is a good hand, the player may wish to draw for a higher total. If the draw creates a bust hand by counting the ace as an 11, the player simply counts the ace as a 1 and continues playing by standing or "hitting"
+              (asking the dealer for additional cards, one at a time).
+            </p>
+            <span><b>The Dealers's Play</b></span>
+            <p>When the dealer has served every player, the dealers face-down card is turned up. If the total is 17 or more, it must stand. If the total is 16 or under, they must take a card. The dealer must continue to take cards until the total is
+              17 or more, at which point the dealer must stand. If the dealer has an ace, and counting it as 11 would bring the total to 17 or more (but not over 21), the dealer must count the ace as 11 and stand. The dealer's decisions, then, are
+              automatic on all plays, whereas the player always has the option of taking one or more cards.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">casino</i>Pontoon BlackJack (Same as Standard BlackJack with some variations. See Below.)</div>
+          <div class="collapsible-body">
+            <span><b>This variation has the following changes:</b></span>
+            <p>The dealer starts with both hole cards face down. The casino makes up for this lack of information by giving the player 2:1 payouts instead of 3:2 payouts.</p>
+            <p>Any two-card hand that totals exactly 21 points is called a “pontoon.</p>
+            <p>Dealer hits on soft 17</p>
+            <p>Pontoon pays 2:1</p>
+            <p>Five card trick pays 2:1</p>
+            <p>Pontoon also allows players to double down with more than two cards in their hands, whereas, in Blackjack, players can only double down on their original two cards</p>
+            <p>Player may only stand on a total of 15+ or after five cards</p>
+            <p>Dealer wins all ties</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">casino</i>Zappit BlackJack (Same as Standard BlackJack with some variations. See Below.)</div>
+          <div class="collapsible-body">
+            <span><b>This variation has the following changes:</b></span>
+            <p>The player's initial two cards total within a certain range, 15 to 17, then he may "zap it" and exchange those cards for the next two cards in the deck.</p>
+            <p>The player may not zap after a zap or after the initial "hit".</p>
+            <p>If the dealer busts with 22, then any player hands still standing shall push.</p>
+            <p>A blackjack before zapping pays 3 to 2. Blackjack after zapping is an immediate winner and pays 1 to 1.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Rules Section Ends here -->
+
+  <!-- JavaSscript files for Webpage -->
+  <script src="../JS/gameRules.js" carset="urf-8"></script>
+</body>
+
+</html>
