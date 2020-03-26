@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('.tooltipped').tooltip();
   });
 
-  // Variables for the game to run
+  // Variables for the game to run and elements from HTML
   var startButton = document.getElementById('startButton'),
     hitButton = document.getElementById('hitButton'),
     stayButton = document.getElementById('stayButton'),
