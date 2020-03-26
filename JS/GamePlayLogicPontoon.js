@@ -1,5 +1,5 @@
 /**
- * GamePlayLogicPontoon
+ * GamePlayLogicPontoon.js
  * @module GamePlayLogicPontoon
 */
 
