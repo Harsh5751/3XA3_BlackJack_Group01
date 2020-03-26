@@ -187,7 +187,7 @@ img {
 
 /*GAME TABLE AND AREA STYLES*/
 .gameTable{
-	background: transparent url('../Images/zappitTable2.png') no-repeat center center;
+	background: transparent url('../Images/zappitTable2.PNG') no-repeat center center;
 	background-size: 70vw 81vh;
 	border: solid 2px white;
 	color: #333;
