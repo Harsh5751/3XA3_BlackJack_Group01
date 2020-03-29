@@ -211,7 +211,7 @@ $(document).ready(function() {
       gamePlayer.playerCards.push(gameDeck.dealCard());
       gamePlayer.playerUpdate();
       gameLogic.gameOver = true;
-      gameDealer.showFirstCard();
+      gameDealer.showBothCards();
       gameLogic.checkForWinner();
       if (gameLogic.playerWon === true && gamePlayer.playerCards.length == 2 && gamePlayer.playerScore == 21) {
         gamePlayer.currentChipBalance += (gamePlayer.currentWager * 1.5);
