@@ -3,4 +3,4 @@ Project for the Software 3XA3 - Software Project Management. Improving an existi
 
 Existing Product - https://n8brown.github.io/blackjack-game/
 
-IMPROVED PRODUCT (Our Project) - https://harsh5751.github.io/3XA3_BlackJack_Group01/HTML/index.html
+IMPROVED PRODUCT (Our Project) - https://harsh5751.github.io/BlackJack_Game/HTML/index.html
